@@ -1,0 +1,587 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+nav{
+  height: 77px;
+  width: 100%;
+background-color: rgb(116, 219, 185); 
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: space-between;
+position: fixed;
+
+}
+nav ul a{
+    text-decoration: none;
+    font-size: 24px;
+     color: black;
+     font-weight: bold;
+     font-family: "Roboto Condensed";
+}
+nav h2{
+      margin-left: 100px;
+}
+nav ul{
+    margin-right: 120px;
+    display: flex;
+    gap: 15px;
+    }
+nav ul a:hover{
+  color: grey;
+  
+}
+.container1{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+}
+.left h3{
+   color: rgb(116, 219, 185); 
+   font-size: 22px;
+  
+}
+.left h1{
+  font-size: 42px;
+
+}
+.left h1 {
+  font-size: 42px;
+  display: flex;
+}
+
+.left h1 span {
+  opacity: 0;
+  animation: fadeIn 0.2s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Delay each letter's animation */
+.left h1 span:nth-child(1) { animation-delay: 0s; }
+.left h1 span:nth-child(2) { animation-delay: 0.2s; }
+.left h1 span:nth-child(3) { animation-delay: 0.4s; }
+.left h1 span:nth-child(4) { animation-delay: 0.6s; }
+.left h1 span:nth-child(5) { animation-delay: 0.8s; }
+.left h1 span:nth-child(6) { animation-delay: 1s; }
+.left h1 span:nth-child(7) { animation-delay: 1.2s; }
+.left h1 span:nth-child(8) { animation-delay: 1.4s; }
+.left h1 span:nth-child(9) { animation-delay: 1.6s; }
+.left h1 span:nth-child(10) { animation-delay: 1.8s; }
+.left h1 span:nth-child(11) {animation-delay: 1.97s;}
+
+
+
+.left p{
+  font-size: 22px;
+}
+.left{
+ 
+
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.textLeft{
+
+  margin: auto;
+  margin-left: 200px;
+
+}
+.container1 .right{
+  width: 60%;
+  height: 100%;
+
+ 
+}
+.container1 .right img{
+   width: 60%;
+   height: 50%;
+   margin-top: 200px;
+   margin-left: 100px;
+   transition: transform 2s ease,box-shadow 0.3s ease;
+
+}
+
+.container1 .right img:hover{
+  box-shadow: -20px -20px 30px rgba(87, 71, 71, 0.7);
+  transform: rotate(360deg);
+  border-radius: 50px;
+  height: 60%;
+  width: 50%;
+  
+}
+
+/* Container 2 */
+.portfolio{
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 45px;
+  margin-top: 77px;
+
+}
+.container2{
+  height: 60vh;
+  width: 80%;
+  margin: auto;
+  padding-top:  30px;
+
+}
+.card1{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: auto;
+  width: 350px;
+  border: 3px solid black;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+
+.card1 img{
+  width: 100%;
+  height: 22vh;
+  border-radius: 15px;
+  opacity: 70%;
+}
+.card1:hover {
+  box-shadow: 8px 8px 20px grey; /*  box-shadow syntax */
+
+  
+}
+.card1 img:hover{
+  opacity: 100%;
+}
+
+.card1 h2{
+  color: gray;
+  text-align: center;
+}
+.card1 h4{
+  color: rgb(170, 164, 158);
+  text-align: center;
+}
+.cards{
+  display: flex;
+justify-content: space-evenly;
+  flex-wrap: wrap;
+ 
+}
+
+/* container3 */
+.container3{
+  width: 100%;
+  margin-top: 50px;
+  height: 50vh;
+  background-color: rgb(116, 219, 185);
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 77px;
+
+}
+
+.container3 .left .text1{
+  max-width: 350px;
+  text-align: center;
+  margin: 5px;
+}
+.container3 .right img{
+  width: 80%;
+  height: 80%;
+  margin-top: 50px;
+  transition: transform 2s ease, box-shadow 1s ease;
+}
+.container3 .right img:hover{
+  box-shadow: -20px -20px 30px rgba(87, 71, 71, 0.7);
+  transform: rotate(360deg);
+  border-radius: 50px;
+  height: 70%;
+  width: 70%;
+}
+.serviceText{
+  font-size: 42px;
+  text-align: center;
+  margin-top: 77px;
+}
+/* Container 4 */
+.container4{
+  padding: 50px;
+
+}
+.services{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.service1{
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(116, 219, 185);
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+
+}
+.service1 p{
+  font-size: 20px;
+  text-align: center;
+}
+.service1 i{
+  margin: 10px;
+  margin-left: 180px;
+  font-size: xx-large;
+}
+.service1 h2{
+  margin-left: 120px;
+  color: gray;
+}
+.service1 button{
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  margin-left: 175px;
+  border: none;
+  font-weight: 700;
+  
+}
+.service1 button:hover{
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+
+}
+.service1 button:active{
+  transform: scale(0.9);
+}
+.contactText{
+  font-size: 42px;
+text-align: center;
+margin-bottom: 10px;
+}
+
+/* Contact form */
+.GetInTouch{
+    margin-top: 10px;
+}
+.contactForm{
+  width: 100%;
+  height: 80vh;
+
+  display: flex;
+  align-items: center;
+  padding:0px 30px;
+  
+}
+.contactText{
+  width: 100%;
+  height: auto;
+  padding: 7px;
+  background-color: rgb(116, 219, 185);
+}
+.contactLeft{
+  width: 50%;
+  height: 100%;
+
+ 
+ 
+}
+
+.contactRight{
+  width: 50%;
+  height: 100%;
+  padding: 0px 50px;
+  padding-top: 10px;
+}
+
+
+label{
+  font-size: 22px;
+  color: grey;
+  margin-left: 10px;
+ 
+
+}
+input{
+  width: 500px;
+  height: 30px;
+  margin: 13px 10px;
+  
+}
+textarea{
+  margin: 10px;
+  width: 500px;
+  height: 200px;
+  
+}
+input::placeholder{
+  font-size: 18px;
+  
+}
+.ContactBtn{
+  width: 80%;
+  margin-left: 50px;
+  margin-top: 27px;
+  height: 70px;
+  color: black;
+  background-color: rgb(87, 218, 172);
+
+  font-family: "Roboto Condensed";
+  font-size: 32px;
+  border: none;
+}
+.ContactBtn:active{
+  transform: scale(0.9);
+  background-color: black;
+  color: white;
+}
+
+.Rightformtext{
+  margin: 10px;
+}
+b{
+  font-size: 24px;
+  color: grey;
+}
+.email ,.phone ,.address, .fax{
+  font-size: 18px;
+  margin-top: 30px;
+}
+/* Footer */
+.footer{
+  width: 100%;
+  height: 150px;
+  background-color: rgb(116, 219, 185);
+  margin-top: 50px;
+}
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+}
+.footer i{
+    font-size: 70px;
+   
+}
+.footer i:hover{
+  font-size: 100px;
+}
+                                 /* Media Queries */
+
+
+/* Mobile Devices */
+
+@media (max-width: 700px) {
+  /* Navigation */
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 5px;
+  }
+  .container1{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+  }
+  .left h3{
+     color: rgb(116, 219, 185); 
+     font-size: 22px;
+    
+  }
+  .left h1{
+    font-size: 42px;
+  }
+  .left p{
+    font-size: 22px;
+  }
+  .left{
+   
+  
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .textLeft{
+  
+    margin: auto;
+    margin-left: 100px;
+  
+  }
+  .container1 .right{
+    width: 70%;
+    height: 70%;
+  
+   
+  }
+  .container1 .right img{
+     width: 70%;
+     height: 70%;
+     margin-top: 100px;
+     margin-left: 100px;
+     transition: all 4s ;
+  
+  }
+  .container1 .right img:hover{
+    transform: rotate(360deg);
+    border-radius: 50px;
+    height: 70%;
+    width: 50%;
+  }
+  
+  /* Portfolio Section */
+  .portfolio {
+      font-size: 30px; /* Smaller font for mobile */
+  }
+
+  .container2 {
+      width: 90%; /* Make it responsive */
+      padding-top: 20px;
+  }
+
+  .cards {
+      flex-direction: column; /* Stack cards */
+      align-items: center;
+  }
+
+  .card1 {
+      width: 90%; /* Full width on mobile */
+      margin-bottom: 20px; /* Space between cards */
+  }
+
+  /* Services Section */
+  .container3{
+    width: 100%;
+    margin-top: 380px;
+    height: auto;
+    padding-bottom: 5px;
+    background-color: rgb(116, 219, 185);
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .container3 .left .text1{
+    max-width: 350px;
+    text-align: center;
+    margin: 2px;
+  }
+  .container3 .right img{
+    width: 50%;
+    height: 50%;
+    margin-top: 50px;
+    transition: all 2s;
+  }
+  .container3 .right img:hover{
+    transform: rotate(360deg);
+    border-radius: 50px;
+    height: 30%;
+    width: 30%;
+  }
+
+  .service1 {
+      width: 90%; /* Full width on mobile */
+      margin-bottom: 20px; /* Space between services */
+      height: auto;
+  }
+
+  .serviceText {
+      font-size: 30px; /* Smaller font */
+  }
+  .contactLeft input,textarea{
+    width: 230px;
+  }
+   .footer{
+    margin-top: 100px;
+   }
+}
+
+/* Tablets */
+@media (min-width: 709px) and (max-width: 1024px) {
+  /* Navigation */
+  nav {
+      padding: 0 20px;
+  }
+
+  /* Portfolio Section */
+  .portfolio {
+      font-size: 40px; /* Adjust font size */
+  }
+
+  .container2 {
+      width: 80%;
+  }
+
+  .cards {
+      justify-content: center; /* Center cards */
+  }
+
+  .card1 {
+      width: 45%; /* Two cards in a row */
+  }
+
+  /* Services Section */
+  .container3 {
+      flex-direction: row; /* Keep items side by side */
+      justify-content: space-around; /* Even spacing */
+  }
+
+  .service1 {
+      width: 30%; /* Three services in a row */
+      height: auto;
+  }
+
+  .serviceText {
+      font-size: 36px; /* Adjust font size */
+  }
+   .contactLeft input {
+    width: 400px;
+   }
+   textarea{
+    width: 400px;
+   }
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+  nav {
+      padding: 0 50px;
+  }
+
+  /* Portfolio Section */
+  .portfolio {
+      font-size: 45px; /* Original font size */
+  }
+
+  .card1 {
+      width: 30%; /* Maintain three cards in a row */
+  }
+
+  /* Services Section */
+  .service1 {
+      width: 30%; /* Maintain three services in a row */
+  }
+}
+
+
+
